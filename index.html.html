@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni-Student Connect</title>
+    <link rel="stylesheet" href="second.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://tse3.mm.bing.net/th/id/OIP.E6skqycNh6r6qF5LDxastgAAAA?rs=1&pid=ImgDetMain">
+        <h1>NMIET Alumni-Student Connect Portal</h1>
+        <p>Find and connect with alumni for guidance and mentorship!</p>
+    </header>
+
+    <section id="filters">
+        <h2>Filter Alumni</h2>
+        <form id="filterForm">
+            <div class="filter-group">
+                <label for="branch"><i class="fas fa-code-branch"></i> Branch:</label>
+                <select id="branch">
+                    <option value="All">All</option>
+                    <option value="Computer Engineering">Computer Engineering</option>
+                    <option value="Mechanical">Mechanical</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Electronics And Telecommunication">Electronics And Telecommunication</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="year"><i class="fas fa-calendar-alt"></i> Graduation Year:</label>
+                <select id="year">
+                    <option value="All">All</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="company"><i class="fas fa-building"></i> Company:</label>
+                <select id="company">
+                    <option value="All">All</option>
+                    <option value="Capgemini">Capgemini</option>
+                    <option value="TCS">TCS</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Accenture">Accenture</option>
+                    <option value="HP">HP</option>
+                    <option value="Cognizant">Cognizant</option>
+                    <option value="Infosys">Infosys</option>
+                </select>
+            </div>
+
+            <button type="button" id="filterBtn">Apply Filters</button>
+            <button type="button" id="resetBtn">Reset Filters</button>
+        </form>
+    </section>
+
+    <section id="alumni-list">
+        <h2>Alumni Directory</h2>
+        <div id="alumniContainer">
+            <!-- Alumni cards will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alumni-Student Connect Portal</p>
+    </footer>
+
+    <script src="third.js"></script>
+</body>
+</html>
