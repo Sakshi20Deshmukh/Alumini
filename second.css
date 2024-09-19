@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(45deg, #ff6f61, #64b5f6);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#filters {
+    margin: 2rem auto;
+    max-width: 600px;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group {
+    margin-bottom: 1rem;
+}
+
+#filters form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+select, button {
+    width: 48%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+select:hover, button:hover {
+    border-color: #64b5f6;
+    background-color: #e3f2fd;
+    box-shadow: 0 0 5px rgba(100, 181, 246, 0.5);
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+#alumni-list {
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+#alumniContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.alumni-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.alumni-card:hover {
+    background-color: #e3f2fd; /* Change background color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    color: rgb(41, 34, 34); /* Optional: Change text color on hover */
+}
+
+footer {
+    background-color: #64b5f6;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.alumni-card h3 {
+    margin: 0.5rem 0;
+}
+
+.alumni-card p {
+    margin: 0.25rem 0;
+}
+
+
+/* Hover effect for filters section background */
+#filters:hover {
+    background-color: #e3f2fd; /* Change background color on hover */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.logo{
+    height:100px ;
+    width: 100px;
+}
